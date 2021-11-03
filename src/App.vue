@@ -5,8 +5,12 @@ import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <img
+    class="logo-landing-page"
+    alt="Vue logo"
+    src="https://royaleapi.com/static/img/favicon2/apple-icon-60x60.png?t=d6c57df4c"
+  />
+  <HelloWorld msg="Welcome in Scrapp Royal API app" />
 </template>
 
 <style>
@@ -17,5 +21,10 @@ import HelloWorld from "./components/HelloWorld.vue";
   text-align: center;
   color: #aec2d3;
   margin-top: 60px;
+}
+
+.logo-landing-page {
+  width: 10rem;
+  height: 10rem;
 }
 </style>
