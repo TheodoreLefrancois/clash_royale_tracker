@@ -6,6 +6,7 @@ import Footer from "./components/layout/Footer.vue";
 <template>
   <div id="flex-root">
     <GetPlayerData />
+    <HelloWorld msg="Welcome in Scrapp Royal API app" />
     <Footer />
   </div>
 </template>

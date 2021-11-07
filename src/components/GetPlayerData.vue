@@ -2,10 +2,17 @@
 console.log("it works");
 </script>
 <template>
-  <h1>Here you can find datas about the player you are looking for</h1>
-  <div>
-    <label for="player-id">Write here the id of the player</label>
-    <input name="player-id" type="text" />
+  <div id="getPlayerDataContainer">
+    <h1>Here you can find datas about the player you are looking for</h1>
+    <img
+      class="logo-landing-page"
+      alt="logo royale api "
+      src="https://royaleapi.com/static/img/favicon2/apple-icon-60x60.png?t=d6c57df4c"
+    />
+    <div>
+      <label for="player-id">Write here the id of the player</label>
+      <input name="player-id" type="text" />
+    </div>
   </div>
 </template>
 <style scoped>
@@ -33,5 +40,16 @@ input:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
   border-radius: 8;
+}
+
+.logo-landing-page {
+  width: 10rem;
+  height: 10rem;
+}
+
+#getPlayerDataContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 </style>
