@@ -4,27 +4,21 @@ interface Person {
   email: string;
   url: string;
 }
-defineProps<{ author: Person }>();
-import packageJson from "../../../package.json";
-console.log(packageJson);
+import { version, author, contributors } from "../../../package.json";
 </script>
 
 <template>
   <div>
     <p>
       Made with &#10084;&#65039; by
-      <a target="_blank" :href="packageJson.author.url">{{
-        packageJson.author.name
-      }}</a>
+      <a target="_blank" :href="author.url">{{ author.name }}</a>
     </p>
     <p>
       Thanks to
-      <a :href="packageJson.contributors[0].url">{{
-        packageJson.contributors[0].name
-      }}</a>
+      <a :href="contributors[0].url">{{ contributors[0].name }}</a>
     </p>
     <p>
-      Version : <span>{{ packageJson.version }}</span>
+      Version : <span>{{ version }}</span>
     </p>
   </div>
 </template>
