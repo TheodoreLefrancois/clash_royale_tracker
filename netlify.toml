@@ -1,2 +1,2 @@
 [[ plugins ]]
-    packages = "./netlify.build.plugin.js"
+    package = "./netlify.build.plugin.js"
