@@ -1,6 +1,4 @@
-<script setup lang="ts">
-console.log("it works");
-</script>
+<script setup lang="ts"></script>
 <template>
   <div id="getPlayerDataContainer">
     <h1>Here you can find datas about the player you are looking for</h1>

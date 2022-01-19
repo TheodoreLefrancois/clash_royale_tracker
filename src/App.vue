@@ -1,12 +1,13 @@
 <script setup lang="ts">
+import HelloWorldVue from "./components/HelloWorld.vue";
 import GetPlayerData from "./components/GetPlayerData.vue";
 import Footer from "./components/layout/Footer.vue";
 </script>
 
 <template>
   <div id="flex-root">
+    <HelloWorldVue msg="Welcome in Scrapp Royal API app" />
     <GetPlayerData />
-    <HelloWorld msg="Welcome in Scrapp Royal API app" />
     <Footer />
   </div>
 </template>
@@ -23,8 +24,8 @@ import Footer from "./components/layout/Footer.vue";
 }
 #flex-root {
   display: flex;
-  height: 100%;
+  height: 100vh;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 </style>
