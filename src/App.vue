@@ -1,12 +1,15 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from "./components/HelloWorld.vue";
+import HelloWorldVue from "./components/HelloWorld.vue";
+import GetPlayerData from "./components/GetPlayerData.vue";
+import Footer from "./components/layout/Footer.vue";
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <div id="flex-root">
+    <HelloWorldVue msg="Welcome in Scrapp Royal API app" />
+    <GetPlayerData />
+    <Footer />
+  </div>
 </template>
 
 <style>
@@ -17,5 +20,12 @@ import HelloWorld from "./components/HelloWorld.vue";
   text-align: center;
   color: #aec2d3;
   margin-top: 60px;
+  height: 100%;
+}
+#flex-root {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 </style>
