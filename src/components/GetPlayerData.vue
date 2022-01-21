@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps<{ playerTag: string }>();
+</script>
 <template>
   <div id="getPlayerDataContainer">
     <h1>Here you can find datas about the player you are looking for</h1>
@@ -9,7 +11,12 @@
     />
     <div>
       <label for="player-id">Write here the id of the player</label>
-      <input name="player-id" type="text" />
+      <input
+        name="player-id"
+        type="text"
+        v-model="playerTag"
+        placeholder="player tag"
+      />
     </div>
   </div>
 </template>
