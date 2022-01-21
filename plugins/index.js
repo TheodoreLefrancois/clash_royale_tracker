@@ -1,19 +1,12 @@
-const { exec } = require("child_process");
-
 module.exports = {
-  onPreBuild: () => {
+  onPreBuild: async ({ utils }) => {
     console.log("Exectuted tests before build");
-    exec("yarn test", (err, stdout, stderr) => {
-      console.log({
-        err,
-        stdout,
-        stderr,
-      });
-      if (err || stderr) {
-        throw new Error("Tests failed");
-      } else if (stdout) {
-        console.log("Tests passed");
-      }
-    });
+    try {
+      await utils.run.command("yarn test");
+    } catch (error) {
+      utils.build.cancelBuild(
+        "Tests failed for any reason, run 'yarn test' locally to see what's wrong"
+      );
+    }
   },
 };
