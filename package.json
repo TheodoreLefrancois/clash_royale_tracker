@@ -18,7 +18,7 @@
   "scripts": {
     "dev": "vite",
     "build": "yarn remove @testing-library/vue && vue-tsc --noEmit && vite build && yarn add -D @testing-library/vue@6.4.2",
-    "build:netlify": "yarn remove @testing-library/vue@6.4.2 && vue-tsc --noEmit && vite build",
+    "build:netlify": "yarn remove @testing-library/vue && vue-tsc --noEmit && vite build",
     "serve": "vite preview",
     "test": "vitest --run",
     "coverage": "vitest --coverage --run",
