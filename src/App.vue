@@ -7,7 +7,7 @@ const playerTag = ref("");
 </script>
 
 <template>
-  <div id="flex-root" test-id="root-div">
+  <div id="flex-root" data-testid="root-div">
     <HelloWorldVue msg="Welcome in Scrapp Royal API app" />
     <GetPlayerData :playerTag="playerTag" />
     <Footer />

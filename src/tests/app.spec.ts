@@ -1,8 +1,9 @@
+//@ts-nocheck
+// Todo fix types with the config exclude pattern
 import App from "../App.vue";
-import { mount } from "@vue/test-utils";
+import { render } from "@testing-library/vue";
 
 test("test App.vue", async () => {
-  expect(App).toBeTruthy();
-  const wrapper = mount(App);
-  expect(wrapper.attributes("test-id")).toBe("root-div");
+  const { getByTestId } = render(App);
+  getByTestId("root-div");
 });
