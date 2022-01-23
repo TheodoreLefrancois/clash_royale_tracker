@@ -2,12 +2,14 @@
 import HelloWorldVue from "./components/HelloWorld.vue";
 import GetPlayerData from "./components/GetPlayerData.vue";
 import Footer from "./components/layout/Footer.vue";
+import { ref } from "vue";
+const playerTag = ref("");
 </script>
 
 <template>
-  <div id="flex-root">
+  <div id="flex-root" data-testid="root-div">
     <HelloWorldVue msg="Welcome in Scrapp Royal API app" />
-    <GetPlayerData />
+    <GetPlayerData :playerTag="playerTag" />
     <Footer />
   </div>
 </template>
