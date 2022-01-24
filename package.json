@@ -1,10 +1,11 @@
 {
   "name": "scrapp_royaleapi",
   "version": "0.0.0",
+  "private": true,
   "author": {
     "name": "Théodore Lefrancois",
     "email": "theodore.lefrancois2906@gmail.com",
-    "url": "https://github.com/TheodoreLefrancois/"
+    "url": "https://github.com/TheodoreLefrancois"
   },
   "contributors": [
     {
@@ -12,12 +13,25 @@
       "url": "https://github.com/Anthony-Verges"
     }
   ],
+  "homepage": "https://github.com/TheodoreLefrancois/scrapp_royaleapi#readme",
   "repository": {
-    "url": "https://github.com/TheodoreLefrancois/scrapp_royaleapi/"
+    "url": "https://github.com/TheodoreLefrancois/scrapp_royaleapi"
   },
   "bugs": {
-    "url": "https://github.com/TheodoreLefrancois/scrapp_royaleapi/issues"
+    "url": "https://github.com/TheodoreLefrancois/scrapp_royaleapi/issues",
+    "email": "theodore.lefrancois2906@gmail.com"
   },
+  "engines": {
+    "node": "^17.3.0",
+    "yarn": "^1.22.15"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "cpu": [
+    "x64"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "yarn remove @testing-library/vue && vue-tsc --noEmit && vite build && yarn add -D @testing-library/vue@6.4.2",
