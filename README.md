@@ -12,4 +12,6 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bccf62c2-c00f-4d52-9902-5403be3ef1ab/deploy-status)](https://app.netlify.com/sites/clash-royale-scrap/deploys)
 
+![workflow](https://github.com/TheodoreLefrancois/scrapp_royaleapi/actions/workflows/ci.yml/badge.svg)
+
 You can view the app [here](https://clash-royale-scrap.netlify.app/)
