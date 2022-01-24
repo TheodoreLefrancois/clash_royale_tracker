@@ -5,5 +5,5 @@ import { render } from "@testing-library/vue";
 
 test("test App.vue", async () => {
   const { getByTestId } = render(App);
-  getByTestId("root-div");
+  getByTestId("root-di");
 });
