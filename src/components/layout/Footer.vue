@@ -37,13 +37,13 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: crimson;
+  background-color: darkblue;
   color: darkgrey;
   text-align: center;
 }
 span {
   font-style: italic;
-  color: darkblue;
+  color: crimson;
 }
 #contributor-mapping {
   display: flex;
@@ -54,6 +54,6 @@ a {
   text-decoration: none;
   padding-left: 5px;
   padding-right: 5px;
-  color: darkblue;
+  color: crimson;
 }
 </style>
