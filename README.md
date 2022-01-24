@@ -15,5 +15,3 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 ![workflow](https://github.com/TheodoreLefrancois/scrapp_royaleapi/actions/workflows/ci.yml/badge.svg)
 
 You can view the app [here](https://clash-royale-scrap.netlify.app/)
-
-## update to test netlify ignore build config
