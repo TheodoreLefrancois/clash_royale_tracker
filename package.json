@@ -15,6 +15,9 @@
   "repository": {
     "url": "https://github.com/TheodoreLefrancois/scrapp_royaleapi/"
   },
+  "bugs": {
+    "url": "https://github.com/TheodoreLefrancois/scrapp_royaleapi/issues"
+  },
   "scripts": {
     "dev": "vite",
     "build": "yarn remove @testing-library/vue && vue-tsc --noEmit && vite build && yarn add -D @testing-library/vue@6.4.2",
