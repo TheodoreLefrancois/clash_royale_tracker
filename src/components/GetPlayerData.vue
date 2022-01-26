@@ -1,5 +1,14 @@
 <script setup lang="ts">
-defineProps<{ playerTag: string }>();
+import { useRouter } from "vue-router";
+import { ref } from "vue";
+
+const router = useRouter();
+const playerTag = ref("");
+function onSubmit() {
+  if (playerTag.value.length === 8) {
+    router.push(`/result?tag=${playerTag.value}`);
+  }
+}
 </script>
 <template>
   <div id="getPlayerDataContainer">
@@ -9,15 +18,16 @@ defineProps<{ playerTag: string }>();
       alt="logo royale api "
       src="https://royaleapi.com/static/img/favicon2/apple-icon-60x60.png?t=d6c57df4c"
     />
-    <div>
-      <label for="player-id">Write here the id of the player</label>
+    <form @submit.prevent="onSubmit()">
+      <label for="player-id">Enter the player tag: 8 caracteres</label>
       <input
         name="player-id"
         type="text"
         v-model="playerTag"
-        placeholder="player tag"
+        placeholder="00000000"
       />
-    </div>
+      <button type="submit" :disabled="playerTag.length !== 8">SEARCH</button>
+    </form>
   </div>
 </template>
 <style scoped>
@@ -32,21 +42,36 @@ div {
 }
 label {
   color: burlywood;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 input {
-  height: 20px;
-  width: 100px;
+  height: 40px;
+  width: 122px;
   color: darkcyan;
-  background-color: darkblue;
-  border-color: darkblue;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  letter-spacing: 2px;
 }
 input:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  border-radius: 8;
+  outline: none;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  border-radius: 1000px;
+  height: 40px;
+  font-size: 1.5rem;
+  width: 150px;
+  color: crimson;
+  background-color: darkblue;
+  cursor: pointer;
+}
 .logo-landing-page {
   width: 10rem;
   height: 10rem;

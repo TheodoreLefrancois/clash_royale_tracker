@@ -23,6 +23,6 @@ import Footer from "./components/layout/Footer.vue";
   display: flex;
   height: 100vh;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 </style>
