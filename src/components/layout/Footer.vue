@@ -33,9 +33,7 @@ const thanked = ref(contributors.slice(0, 3));
 
 <style scoped>
 footer {
-  z-index: 10;
-  position: absolute;
-  bottom: 0;
+  margin-top: 40px;
   width: 100%;
   background-color: darkblue;
   color: darkgrey;
