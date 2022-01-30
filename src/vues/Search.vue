@@ -1,12 +1,14 @@
 <script setup lang="ts">
+import getScreenshot from "../utils/puppeteerCreateScreenshot";
 const { tag } = defineProps<{ tag: string }>();
+getScreenshot(tag);
 </script>
 
 <template>
   <h1>
     You searched <span>{{ tag }}</span>
   </h1>
-  <img src="/screenshot.png" alt="result_picture_from_royale_api" />
+  <h2>We are collecting datas</h2>
 </template>
 
 <style scoped>

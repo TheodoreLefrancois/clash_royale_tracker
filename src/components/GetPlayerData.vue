@@ -4,6 +4,8 @@ import { ref } from "vue";
 
 const router = useRouter();
 const playerTag = ref("");
+
+/** onSubmit will redirect to the result page */
 function onSubmit() {
   if (playerTag.value.length === 8) {
     router.push(`/result?tag=${playerTag.value}`);

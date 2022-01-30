@@ -42,12 +42,14 @@
     "format": "prettier .  --write"
   },
   "dependencies": {
+    "puppeteer": "13.1.2",
+    "user-agents": "1.0.908",
     "vue": "3.2.25",
     "vue-router": "4.0.12"
   },
   "devDependencies": {
-    "@testing-library/vue": "6.4.2",
     "@types/node": "16.11.6",
+    "@types/user-agents": "^1.0.2",
     "@vitejs/plugin-vue": "2.0.1",
     "c8": "7.11.0",
     "happy-dom": "2.30.1",
