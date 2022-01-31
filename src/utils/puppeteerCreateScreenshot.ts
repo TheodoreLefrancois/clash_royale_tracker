@@ -1,8 +1,8 @@
-const puppeteer = require("puppeteer");
+import puppeteer from "puppeteer";
 // import userAgent from "user-agents";
 import { useRouter } from "vue-router";
 const router = useRouter();
-const getScreenshot = async (tag) => {
+const getScreenshot = async (tag: string) => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   // await page.setUserAgent(userAgent.toString());

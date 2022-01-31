@@ -7,4 +7,7 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ["puppeteer"],
   },
+  preview: {
+    port: 8000,
+  },
 });

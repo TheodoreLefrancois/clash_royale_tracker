@@ -6,7 +6,7 @@ const { tag } = defineProps<{ tag: string }>();
   <h1>
     You searched <span>{{ tag }}</span>
   </h1>
-  <img src="/screenshot.png" alt="result_picture_from_royale_api" />
+  <!-- <img src="/screenshot.png" alt="result_picture_from_royale_api" /> -->
 </template>
 
 <style scoped>
