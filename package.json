@@ -30,7 +30,8 @@
     "linux"
   ],
   "cpu": [
-    "x64"
+    "x64",
+    "arm64"
   ],
   "scripts": {
     "dev": "vite",
