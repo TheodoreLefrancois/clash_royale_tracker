@@ -1,6 +1,16 @@
 <script setup lang="ts">
+import axios from "axios";
+import { RoyaleResponse } from "../types";
+const token = import.meta.env.VITE_TOKEN;
 const { tag } = defineProps<{ tag: string }>();
-console.log(tag);
+
+const url = `https://proxy.royaleapi.dev/v1/players/%23${tag}`;
+const { data } = await axios.get<RoyaleResponse>(url, {
+  headers: {
+    Authorization: `Bearer ${token}`,
+  },
+});
+console.log(data);
 </script>
 
 <template>
