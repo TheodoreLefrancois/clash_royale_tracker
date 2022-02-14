@@ -12,11 +12,16 @@ const thanked = ref(contributors.slice(0, 3));
     </p>
     <p id="contributor-mapping">
       Thanks to
-      <a v-for="(contributor, index) in thanked" :href="contributor.url">{{
-        index !== thanked.length - 1
-          ? contributor.name + "," + ` `
-          : contributor.name
-      }}</a>
+      <a
+        v-for="(contributor, index) in thanked"
+        :key="index"
+        :href="contributor.url"
+        >{{
+          index !== thanked.length - 1
+            ? contributor.name + "," + ` `
+            : contributor.name
+        }}</a
+      >
       <a
         v-if="contributors.length !== thanked.length"
         target="_blank"
