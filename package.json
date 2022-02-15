@@ -1,5 +1,5 @@
 {
-  "name": "scrapp_royaleapi",
+  "name": "clash_royale_tracker",
   "version": "0.0.0",
   "private": true,
   "author": {
@@ -13,12 +13,12 @@
       "url": "https://github.com/Anthony-Verges"
     }
   ],
-  "homepage": "https://github.com/TheodoreLefrancois/scrapp_royaleapi#readme",
+  "homepage": "https://github.com/TheodoreLefrancois/clash_royale_tracker#readme",
   "repository": {
-    "url": "https://github.com/TheodoreLefrancois/scrapp_royaleapi"
+    "url": "https://github.com/TheodoreLefrancois/clash_royale_tracker"
   },
   "bugs": {
-    "url": "https://github.com/TheodoreLefrancois/scrapp_royaleapi/issues",
+    "url": "https://github.com/TheodoreLefrancois/clash_royale_tracker/issues",
     "email": "theodore.lefrancois2906@gmail.com"
   },
   "engines": {

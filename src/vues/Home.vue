@@ -4,7 +4,7 @@ import GetPlayerDataVue from "../components/GetPlayerData.vue";
 </script>
 
 <template>
-  <HelloWorldVue msg="Welcome in Scrapp Royal API app" />
+  <HelloWorldVue msg="Welcome in Clash Royale Tracker" />
   <GetPlayerDataVue />
 </template>
 
